@@ -12,7 +12,7 @@
     </nav>
 
     <div class="icons">
-        <a href="#">
+        <a href="login.php">
             <i class="fa-solid fa-user"></i>
         </a>
 

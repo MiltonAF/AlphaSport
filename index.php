@@ -17,18 +17,49 @@ include("layout/navbar.php");
 
 </section>
 
-<section class="field">
+<section class="field" id="field">
+
+
     <div class="cont">
-        <div class="title">
-            <h2>Canchas Sinteticas</h2>
-            <hr>
+
+        <div class="titlte">
+            <h3>Canchas</h3>
+        </div>
+        <div class="date">
+            <h2>Nombre: <span>Cancha23</span></h2>
+            <h2>Nombre: <span>Cancha23</span></h2>
+            <h2>Nombre: <span>Cancha23</span></h2>
+            <h2>Nombre: <span>Cancha23</span></h2>
 
         </div>
-        <div class="cards">
 
 
-        </div>
+
+
+
     </div>
+
+
+    <div class="cont">
+
+        <div class="titlte">
+            <h3>Canchas</h3>
+        </div>
+        <div class="date">
+            <h2>Nombre: <span>Cancha23</span></h2>
+            <h2>Nombre: <span>Cancha23</span></h2>
+            <h2>Nombre: <span>Cancha23</span></h2>
+            <h2>Nombre: <span>Cancha23</span></h2>
+
+        </div>
+
+
+
+
+
+    </div>
+
+
 </section>
 
 

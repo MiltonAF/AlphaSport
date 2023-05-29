@@ -34,3 +34,15 @@
   display: flex;
   text-justify: auto;
 }
+
+.field {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.field .cont {
+  width: 25%;
+
+  background: var(--black);
+}

@@ -1,0 +1,218 @@
+@import url("global.css");
+.signin,
+.signup {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.signup {
+  display: none;
+}
+
+.logo-login {
+  width: 100%;
+  text-align: center;
+}
+
+.logo-login img {
+  width: 20%;
+  margin: auto;
+}
+
+.signin .row,
+.signup .row {
+  width: 50%;
+  display: flex;
+  background: var(--black);
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.signup .row {
+  width: 90%;
+}
+
+.signup .row form .logo-login img {
+  width: 10%;
+}
+
+.signin .row form,
+.signup .row form {
+  flex: 1 1 45rem;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.row form h3 {
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  color: #fff;
+}
+
+.signup .row form .body-form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.signup .row form .insert-photo {
+  width: 45%;
+  height: 400px;
+}
+
+.signup .row form .textfile {
+  width: 45%;
+}
+
+.signup .row form .insert-photo .wrapp {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  border: 2px dashed grey;
+  border-radius: 10px;
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.signup .row form .insert-photo .wrapp.active {
+  border: none;
+}
+
+.signup .row form .insert-photo .wrapp .image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup .row form .insert-photo .wrapp .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.signup .row form .insert-photo .wrapp .content .icon {
+  font-size: 100px;
+  color: var(--main-color);
+}
+
+.signup .row form .insert-photo .wrapp .content .text {
+  font-size: 20px;
+  font-weight: 500;
+  color: grey;
+}
+
+.signup .row form .insert-photo .wrapp #cancel-btn {
+  position: absolute;
+  right: 15px;
+  color: var(--main-color);
+  top: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+.signup .row form .insert-photo .wrapp.active:hover #cancel-btn {
+  display: block;
+}
+
+.signup .row form .insert-photo .wrapp.active:hover .file-text {
+  display: block;
+}
+
+.signup .row form .insert-photo .wrapp #cancel-btn:hover {
+  color: hotpink;
+}
+
+.signup .row form .insert-photo .wrapp .file-text {
+  position: absolute;
+  bottom: 0px;
+  background: linear-gradient(136deg, #00b7ff 0%, #002fff 100%);
+  padding: 8px 0;
+  width: 100%;
+  color: white;
+  font-size: 18px;
+  display: none;
+}
+
+.signup .row form .insert-photo #custom-btn {
+  width: 50%;
+  height: 50px;
+  display: block;
+  border: none;
+  margin: auto;
+  margin-top: 30px;
+  background: linear-gradient(136deg, #00b7ff 0%, #002fff 100%);
+  border-radius: 25px;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.row form .inputBox {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background: var(--bg);
+  border: var(--border);
+}
+
+.row form .inputBox span {
+  color: #fff;
+  font-size: 2rem;
+  padding-left: 2rem;
+  padding-right: 1rem;
+}
+
+#hide-pass-in,
+#hide-pass-up {
+  display: none;
+}
+
+.row form .inputBox input {
+  width: 100%;
+  padding: 2rem 1rem;
+  font-size: 1.7rem;
+  color: #fff;
+  text-transform: none;
+  background: none;
+}
+
+::-ms-reveal {
+  display: none;
+}
+
+@media only screen and (max-width: 900px) {
+  .signin .row,
+  .signup .row {
+    width: 100%;
+  }
+  .signup .row form .body-form {
+    display: block;
+  }
+  .signup .row form .insert-photo {
+    width: 100%;
+    height: 300px;
+    margin: auto;
+  }
+  .signup .row form .textfile {
+    width: 100%;
+  }
+  .signup .row form .insert-photo .wrapp {
+    height: 200px;
+  }
+  .signup .row form .logo-login img {
+    width: 20%;
+  }
+}
