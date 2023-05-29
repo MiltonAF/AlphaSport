@@ -1,0 +1,36 @@
+@import url("global.css");
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: #5433ff;
+  background: radial-gradient(
+      ellipse farthest-corner at 45px 45px,
+      hsla(170, 100%, 30%, 0.658) 0%,
+      hsla(200, 100%, 29%, 0.664) 50%,
+      hsla(230, 100%, 25%, 0.644) 95%
+    ),
+    url(../img/head.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.home .content {
+  width: 50%;
+}
+
+.home .content h3 {
+  font-size: xx-large;
+  text-transform: capitalize;
+  color: #00a7d1;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.home .content p {
+  font-size: x-large;
+  font-weight: 400;
+  color: #eee;
+  display: flex;
+  text-justify: auto;
+}
