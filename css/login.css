@@ -86,45 +86,16 @@
   display: none;
 }
 
-.cont_radio {
+.cont_radio,
+.time {
   display: flex;
   justify-content: space-around;
 }
 
-.cont_radio input[type="radio"] {
-  display: none;
-}
-
-.cont_radio label {
-  position: relative;
-  color: var(--main-color);
+.time label {
+  color: white;
   font-size: 16px;
-  border: 2px solid var(--main-color);
-  border-radius: 5px;
-  padding: 10px;
-  align-items: center;
-}
-
-.cont_radio label::before {
-  display: inline-table;
-  content: "";
-  width: 16px;
-  height: 16px;
-  border: 3px solid var(--main-color);
-  border-radius: 50%;
-  margin-right: 10px;
-}
-
-.cont_radio input[type="radio"]:checked + label {
-  background-color: var(--main-color);
-  color: var(--black);
-}
-
-.cont_radio input[type="radio"]:checked + label::before {
-  height: 16px;
-  width: 16px;
-  border: 3px solid var(--black);
-  background-color: var(--main-color);
+  font-weight: 600;
 }
 
 .body-form #div-f {

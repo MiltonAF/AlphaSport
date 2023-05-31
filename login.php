@@ -133,10 +133,38 @@ include("layout/navbar.php");
                         <input type="text" name="price" placeholder="Precio del alquiler">
                     </div>
 
-                    <div class="inputBox">
-                        <span class="fas fa-user"></span>
-                        <input type="text" name="schedule" placeholder="Horas laboral ">
+
+                    <div class="shuel">
+
+                        <h3>Horario</h3>
+
+                        <div class="time">
+
+                            <div class="input_time">
+                                <label for="start_time">Hora Inicio</label>
+                                <div class="inputBox">
+                                    <input type="time" name="start_time">
+                                </div>
+                            </div>
+
+                            <div class="input_time">
+                                <label for="end_time">Hora Fin</label>
+                                <div class="inputBox">
+                                    <input type="time" name="end_time">
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+
+
+
+
                     </div>
+
+
 
 
                 </div>

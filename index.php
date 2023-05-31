@@ -26,8 +26,9 @@ include("layout/navbar.php");
 
     <div class="box-container">
         <?php
-        $fields = "SELECT p.nit AS nit, p.name AS name, d.price AS price FROM field f, field_detail d WHERE f.nit = d.nit";
+        $fields = "SELECT * FROM field f INNER JOIN field_detail d ON f.nit = d.nit";
         $result = mysqli_query($conn, $fields);
+
 
         while ($row = $result->fetch_assoc()) {
             ?>
@@ -36,7 +37,12 @@ include("layout/navbar.php");
                 <h3>
                     <?php echo ($row['name']) ?>
                 </h3>
-                <div class="price">Empieza Ya</div>
+                <div class="price">
+                    <h4>Precio de alquiler: $
+                        <?php echo ($row['price']) ?>
+                    </h4>
+
+                </div>
                 <a href="#" class="btn">Aqui</a>
             </div>
         <?php } ?>

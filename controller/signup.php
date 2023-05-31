@@ -11,14 +11,21 @@ $addres = $_POST['addres'];
 $username = $_POST['username'];
 $password = $_POST['password'];
 $price = $_POST['price'];
-$schedule = $_POST['schedule'];
+$startTime = strtotime($_POST['start_time']);
+$start_time = date("H:i:s", $startTime);
+
+$endTime = strtotime($_POST['end_time']);
+$end_time = date("H:i:s", $endTime);
+echo $texto;
+
+
 
 
 $sql = "INSERT INTO users VALUES ('$username','$password')";
 $save = mysqli_query($conn, $sql);
 
 if (empty($nit)) {
-    $sql = "INSERT INTO people VALUES ('$id','$name', '$surname', '$email', '$phone', 'CLiente', '$username')";
+    $sql = "INSERT INTO people VALUES ('$id','$name', '$surname', '$email', '$phone', 'Cliente', '$username')";
     $save = mysqli_query($conn, $sql);
 
     if ($save == true) {
@@ -33,9 +40,12 @@ if (empty($nit)) {
     $sql = "INSERT INTO field VALUES ('$nit','$name', '$email', '$phone', '$addres', '$username')";
     $save = mysqli_query($conn, $sql);
 
+    echo ($endTime);
+
     if ($save == true) {
-        $sql = "INSERT INTO field_detail VALUES (NULL,'$price','$schedule', '$nit')";
+        $sql = "INSERT INTO field_detail VALUES (NULL, '$price','$start_time', '$end_time','$nit')";
         $save = mysqli_query($conn, $sql);
+
 
         if ($save == true) {
             header('location: ../login.php');
