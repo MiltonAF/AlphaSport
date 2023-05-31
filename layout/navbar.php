@@ -13,7 +13,20 @@
 
     <div class="icons">
         <a href="login.php">
-            <i class="fa-solid fa-user"></i>
+            <?php if ($field) { ?>
+                <span class="nm">
+                    <?php echo ($field['name']) ?>
+                </span>
+
+            <?php } else if ($people) { ?>
+                    <span class="nm">
+                    <?php echo ($people['name'] . " " . $people['surname']) ?>
+                    </span>
+
+            <?php } else { ?>
+                    <i class="fa-solid fa-user"></i>
+            <?php } ?>
+
         </a>
 
         <div class="fas fa-bars" id="menu-btn"></div>

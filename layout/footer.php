@@ -16,7 +16,7 @@
 
     </div>-->
 
-    <div class="credit">Creado Por <span>Juan Esteban & Milton Felizzola</span> | Todos los derechos reservados</div>
+    <div class="credit">Creado Por <span>AlphaSport</span> | Todos los derechos reservados</div>
 
 </section>
 

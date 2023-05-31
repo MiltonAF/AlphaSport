@@ -62,6 +62,20 @@
   color: #00dffc;
 }
 
+.header .icons .nm {
+  font-size: 16px;
+  font-weight: bold;
+  color: aqua;
+}
+
+.header .icons .nm {
+  border-radius: 10px;
+  padding: 5px;
+  background-color: aqua;
+
+  color: black;
+}
+
 #menu-btn {
   display: none;
 }

@@ -1,5 +1,8 @@
 <?php
+
 include("layout/head.php");
+include("layout/session.php");
+
 include("layout/navbar.php");
 
 ?>
@@ -17,53 +20,28 @@ include("layout/navbar.php");
 
 </section>
 
-<section class="field" id="field">
+<section class="menu" id="menu">
 
+    <h1 class="heading"> Nuestros <span>Temas</span> </h1>
 
-    <div class="cont">
+    <div class="box-container">
+        <?php
+        $fields = "SELECT p.nit AS nit, p.name AS name, d.price AS price FROM field f, field_detail d WHERE f.nit = d.nit";
+        $result = mysqli_query($conn, $fields);
 
-        <div class="titlte">
-            <h3>Canchas</h3>
-        </div>
-        <div class="date">
-            <h2>Nombre: <span>Cancha23</span></h2>
-            <h2>Nombre: <span>Cancha23</span></h2>
-            <h2>Nombre: <span>Cancha23</span></h2>
-            <h2>Nombre: <span>Cancha23</span></h2>
+        while ($row = $result->fetch_assoc()) {
+            ?>
+            <div class="box">
 
-        </div>
-
-
-
-
-
+                <h3>
+                    <?php echo ($row['name']) ?>
+                </h3>
+                <div class="price">Empieza Ya</div>
+                <a href="#" class="btn">Aqui</a>
+            </div>
+        <?php } ?>
     </div>
-
-
-    <div class="cont">
-
-        <div class="titlte">
-            <h3>Canchas</h3>
-        </div>
-        <div class="date">
-            <h2>Nombre: <span>Cancha23</span></h2>
-            <h2>Nombre: <span>Cancha23</span></h2>
-            <h2>Nombre: <span>Cancha23</span></h2>
-            <h2>Nombre: <span>Cancha23</span></h2>
-
-        </div>
-
-
-
-
-
-    </div>
-
 
 </section>
-
-
-
-
 
 <?php include("layout/footer.php"); ?>
