@@ -15,11 +15,8 @@ if ($cont["total"] == 1) {
     $cont = $result->fetch_assoc();
 
 
-
-
-
-
     if ($cont["total"] == 1) {
+
 
         $sql_people = "SELECT * FROM people p WHERE  p.user = '$user' ";
         $result_people = mysqli_query($conn, $sql_people);

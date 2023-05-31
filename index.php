@@ -15,14 +15,14 @@ include("layout/navbar.php");
             Por eso tenemos las mejores canchas sinteticas para que puedan jugar de una manera segura
             y eficiente, Contamos con una zona de refigeracion y una zona de espera donde tus amigos
             o familiares pueden disfrutar mientras te ven jugar</p>
-        <a href="topics.php" class="btn">Comienza Ya</a>
+        <!-- <a href="#" class="btn">Comienza Ya</a>-->
     </div>
 
 </section>
 
 <section class="menu" id="menu">
 
-    <h1 class="heading"> Nuestros <span>Temas</span> </h1>
+    <h1 class="heading"> las <span>Canchas</span> </h1>
 
     <div class="box-container">
         <?php
@@ -37,13 +37,25 @@ include("layout/navbar.php");
                 <h3>
                     <?php echo ($row['name']) ?>
                 </h3>
-                <div class="price">
-                    <h4>Precio de alquiler: $
-                        <?php echo ($row['price']) ?>
-                    </h4>
+                <div class="date">
+                    <p>Horario:
+                        <span>
+                            <?php echo ($row['start_time'] . '-' . $row['end_time']) ?>
+                        </span>
+                    </p>
+                    <p>Direccion:
+                        <span>
+                            <?php echo ($row['addres']) ?>
+                        </span>
+                    </p>
+                    <p>Precio: $
+                        <span>
+                            <?php echo ($row['price']) ?>
+                        </span>
+                    </p>
 
                 </div>
-                <a href="#" class="btn">Aqui</a>
+                <a href="#" class="btn">Reservar</a>
             </div>
         <?php } ?>
     </div>

@@ -59,19 +59,19 @@
 */
 .header .icons i:hover,
 #menu-btn:hover {
-  color: #00dffc;
+  color: var(--main-color);
 }
 
 .header .icons .nm {
   font-size: 16px;
   font-weight: bold;
-  color: aqua;
+  color: var(--main-color);
 }
 
 .header .icons .nm {
   border-radius: 10px;
   padding: 5px;
-  background-color: aqua;
+  background-color: var(--main-color);
 
   color: black;
 }

@@ -6,9 +6,9 @@
   background: #5433ff;
   background: radial-gradient(
       ellipse farthest-corner at 45px 45px,
-      hsla(170, 100%, 30%, 0.658) 0%,
-      hsla(200, 100%, 29%, 0.664) 50%,
-      hsla(230, 100%, 25%, 0.644) 95%
+      hsla(170, 100%, 14%, 0.658) 0%,
+      hsla(200, 100%, 13%, 0.664) 50%,
+      hsla(0, 0%, 0%, 0.644) 95%
     ),
     url(../img/head.jpg);
   background-size: cover;
@@ -57,16 +57,15 @@
   padding: 1rem 0;
 }
 
-.menu .box-container .box .price {
-  color: #fff;
-  font-size: 2.5rem;
-  padding: 0.5rem 0;
+.menu .box-container .box .date {
+  color: wheat;
+  font-size: large;
+  font-weight: bolder;
+  padding: 3px 0px;
 }
 
-.menu .box-container .box .price span {
-  font-size: 1.5rem;
-  text-decoration: line-through;
-  font-weight: lighter;
+.menu .box-container .box .date span {
+  color: var(--main_color);
 }
 
 .menu .box-container .box:hover {

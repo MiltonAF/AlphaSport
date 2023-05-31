@@ -16,7 +16,6 @@ $start_time = date("H:i:s", $startTime);
 
 $endTime = strtotime($_POST['end_time']);
 $end_time = date("H:i:s", $endTime);
-echo $texto;
 
 
 
